@@ -1,0 +1,14 @@
+result = 1
+try:
+   while result > 0:
+      a = int(input('Enter the first number: '))
+      b = int(input('Enter the second number: '))
+      result = a + b
+      print('Sum of numbers = ', result)
+except ValueError:
+   print('Enter only numbers!')
+except KeyboardInterrupt:
+   print('Program was stopped by keyboard.')
+finally:
+   print('Program is closed.')
+
