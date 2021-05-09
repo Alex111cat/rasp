@@ -101,7 +101,7 @@ try:
             #print ("CH0:", trim_pot)
 
 
-        if set_volume >= 60 or temperature[1] >= 35:
+        if set_volume >= 40 or temperature[1] >= 35:
             temp_smoke_status = True
         else:
             temp_smoke_status = False
@@ -112,9 +112,9 @@ try:
         print ("Temperature and Smoke levels are Published")
         
         if temp_smoke_status is True:
-            time.sleep(30);
+            time.sleep(5);
         else:
-            time.sleep(600);
+            time.sleep(10);
         
         
 except KeyboardInterrupt:

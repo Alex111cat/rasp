@@ -62,7 +62,7 @@ try:
     while True:
         today = datetime.datetime.today()
         
-        if (today.hour == 5 and today.minute == 55 and today.second == 0):
+        if (today.hour == 19 and today.minute == 24 and today.second == 0):
             dist = []
             
             if DEVICE_ID == "dca6324f3207":
@@ -71,7 +71,7 @@ try:
                     
             for i in range(9):
                 dist.append(distance())
-                time.sleep(30)
+                time.sleep(1)
                 #print(dist)
             dist1 = round(numpy.mean(dist))
             print ("Measured Distance = %.1f cm" % dist1)
